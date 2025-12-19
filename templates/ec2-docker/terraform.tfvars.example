@@ -1,0 +1,12 @@
+region = "us-east-1"
+name   = "ec2-docker"
+
+allowed_ingress_cidrs = ["0.0.0.0/0"]
+
+instance_type = "t3.micro"
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}

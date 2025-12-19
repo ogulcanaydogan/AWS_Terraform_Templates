@@ -1,0 +1,10 @@
+region      = "us-east-1"
+name        = "log-metric"
+filter_pattern = "ERROR"
+alarm_email = "you@example.com"
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}

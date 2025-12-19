@@ -1,0 +1,9 @@
+region       = "us-east-1"
+name         = "iam-examples"
+s3_bucket_arn = "arn:aws:s3:::example-bucket"
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}

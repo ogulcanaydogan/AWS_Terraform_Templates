@@ -1,0 +1,19 @@
+name: Terraform
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.6
+      - name: Terraform fmt
+        run: terraform fmt -check -recursive modules templates
+      - name: Terraform validate
+        run: ./scripts/terraform-validate.sh

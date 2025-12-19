@@ -1,0 +1,11 @@
+region = "us-east-1"
+name   = "app-queue"
+
+create_dlq            = true
+dlq_max_receive_count = 5
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}
