@@ -1,0 +1,15 @@
+region = "us-east-1"
+name   = "app-topic"
+
+subscriptions = [
+  {
+    protocol = "email"
+    endpoint = "you@example.com"
+  }
+]
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}

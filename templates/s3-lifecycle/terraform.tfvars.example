@@ -1,0 +1,9 @@
+region          = "us-east-1"
+bucket_name     = "example-data-bucket"
+log_bucket_name = "example-data-logs"
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}

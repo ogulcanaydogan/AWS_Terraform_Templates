@@ -1,0 +1,8 @@
+region = "us-east-1"
+name   = "app-repo"
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}

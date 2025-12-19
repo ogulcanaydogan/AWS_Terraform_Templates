@@ -1,0 +1,16 @@
+region = "us-east-1"
+name   = "ecs-fargate"
+
+cidr_block           = "10.3.0.0/16"
+azs                  = ["us-east-1a", "us-east-1b"]
+public_subnet_cidrs  = ["10.3.1.0/24", "10.3.2.0/24"]
+private_subnet_cidrs = ["10.3.101.0/24", "10.3.102.0/24"]
+
+container_image = "public.ecr.aws/nginx/nginx:latest"
+container_port  = 80
+
+tags = {
+  project     = "terraform-templates"
+  environment = "dev"
+  owner       = "example"
+}
