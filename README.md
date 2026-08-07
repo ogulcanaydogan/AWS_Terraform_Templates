@@ -2,6 +2,15 @@
 
 This repository provides reusable Terraform modules and ready-to-run templates for common AWS use cases. Each template is self-contained with pinned providers, variables/outputs, tagging, and a README.
 
+## Published Modules and Registry Adoption
+
+The reusable building blocks in `modules/` are also published individually on the
+[Terraform Registry](https://registry.terraform.io/namespaces/ogulcanaydogan) under the
+`ogulcanaydogan` namespace (12 AWS modules, MIT-licensed). They see real third-party
+use: the [docker-instance](https://registry.terraform.io/modules/ogulcanaydogan/docker-instance/aws)
+module has been downloaded over 1,200 times, and the namespace totals roughly 1,400
+downloads across all modules. Live counts are shown on each module's registry page.
+
 ## Repository Structure
 ```
 modules/   reusable building blocks
@@ -45,3 +54,6 @@ docs/      repo documentation
 
 ## Contributing
 See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
+
+## License
+MIT. See [LICENSE](LICENSE).
